@@ -106,7 +106,7 @@ class Geocoder extends Controller
     {
         $areaData = cache('tpext_deocoder_' . $adcode);
         if (!$areaData) {
-            $path = Module::getRoot() . "data/{$adcode}.json";
+            $path = Module::getInstance()->getRoot() . "data/{$adcode}.json";
             if (!is_file($path)) {
                 $areaData = [];
             } else {
@@ -127,7 +127,7 @@ class Geocoder extends Controller
     {
         $cityNames = cache('tpext_deocoder_city_names');
         if (!$cityNames) {
-            $path = Module::getRoot() . 'data/city_names.json';
+            $path = Module::getInstance()->getRoot() . 'data/city_names.json';
             $cityNames = is_file($path) ? json_decode(file_get_contents($path), true) : [];
             cache('tpext_deocoder_city_names', $cityNames);
         }
