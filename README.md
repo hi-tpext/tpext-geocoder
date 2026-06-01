@@ -36,7 +36,7 @@ GET /api/geocoder/address?lng=xxx&lat=xxx
 
 由于 webman 通过控制器判断当前应用
 
-`\tpext\geocoder\api\controller\Areacity` 识别为 `geocoder` 应用，而不是 `api`
+`\tpext\geocoder\api\controller\Geocoder` 识别为 `geocoder` 应用，而不是 `api`
 
 ```php
 return [
