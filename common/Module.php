@@ -6,7 +6,7 @@ use tpext\common\Module as baseModule;
 
 class Module extends baseModule
 {
-    protected $version = '1.0.1';
+    protected $version = '1.0.2';
 
     protected $name = 'tpext.geocoder';
 
