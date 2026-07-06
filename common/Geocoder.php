@@ -7,7 +7,7 @@ class Geocoder
     /**
      * 直辖市 adcode
      */
-    protected $municipal = [110000, 120000, 310000, 500000];
+    protected static $municipal = [110000, 120000, 310000, 500000];
 
     /**
      * 根据经纬度坐标查找省市区
